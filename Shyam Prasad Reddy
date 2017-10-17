@@ -1,1 +1,28 @@
+ackage restaurant;
+import java.io.*;
+//import java.util.Scanner;
 
+public class RMS{
+public static void main(String[] args){
+    System.out.println(" ~ ~ ~ ~ Welcome to the Restaurant ~ ~ ~ ~" );
+    System.out.println("                                          " );
+    System.out.println("                "+* Menu *+"              " );
+    System.out.println("                                          " );
+    System.out.println("                 VEGETARIAN               " );
+    System.out.println("                                          " );
+    System.out.println("    SOUPS" );
+    System.out.println("1"+"  "+"Veg Corn Soup                   90" );
+    System.out.println("2"+"  "+"Tomato Soup                     90" );
+    System.out.println("                                           " );
+    System.out.println("    STARTERS                               " );
+    System.out.println("3"+"  "+"Veg Manchuria                  170" );
+    System.out.println("4"+"  "+"Baby Corn 65                   180" );
+    System.out.println("                                           " );
+    System.out.println("    MAIN COURSE                            " );
+    System.out.println("5"+"  "+"Chilli Chicken                 200" );
+    System.out.println("6"+"  "+"Pepper Chicken                 220" );
+
+    
+
+}
+}
