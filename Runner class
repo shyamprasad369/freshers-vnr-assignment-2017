@@ -1,0 +1,10 @@
+
+// This class runs the menu
+public class Runner{
+ publie static void main(String[] args){
+Menu menu= new Menu();
+
+//prints entire menu
+System.out.println(menu.toString());
+}
+}
