@@ -2,9 +2,37 @@
 // This class runs the menu
 public class Runner{
  publie static void main(String[] args){
-Menu menu= new Menu();
 
-//prints entire menu
-System.out.println(menu.toString());
+Scanner reasder = new Scanner(System.in);
+//prints out a greeting
+System.out.println("Welcome to restaurant");
+System.out.println("We serve variety of Asisan dishes");
+System.out.println();
+
+// get a menu
+Menu menu1= new Menu();
+System.out.println(menu);
+
+//read full menu
+System.out.println("would you like to view the ful menu or just a section?[FULL][SEC]");
+///get the answer
+String answer = reader.next();
+
+//check for answer
+while(!(answer.equalsIgnoreCase("full")|| answer.equalsIgnoreCase("sec"))){
+System.out.println(menu);
+}
+if(answer.equalIgnoreCase("full")){
+System.out.println(menu);
+}
+
+else{
+System.out.println("Which section? [Soup] [Straters] [Main Dishes] [Drinks]");
+String section = scan.next().toLowerCase();
+}
+
+//place a order
+Order order = new order();
+
 }
 }
