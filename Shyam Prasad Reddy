@@ -1,5 +1,5 @@
 package restaurant;
-
+// Items in the menu
 publice class Item {
 
 private String name;
