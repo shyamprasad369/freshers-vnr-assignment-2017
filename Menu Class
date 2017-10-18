@@ -1,0 +1,141 @@
+import java.util.ArrayList;
+public class Menu{
+
+private ArrayList<Item> soup = new ArrayList<Item>();
+private ArrayList<Item> starters = new ArrayList<Item>();
+private ArrayList<Item> main = new ArrayList<Item>();
+private ArrayList<Item> drinks = new ArrayList<Item>();
+
+public Menu(){
+ populateMenu();
+}
+
+//returns a specific soup
+public Item getSoup(int index){
+ return soup.get(index);
+}
+
+ //  return the size of the category soups
+ public int getSoupSize(){
+ return soup.size();
+ }
+
+public String getAllSoup(){
+String aMenu = "";
+aMenu += "SOUPS:\n";
+for(int i=0;i<soup.size();i++){
+  Item a = soup.get(i);
+    //add id,name and price
+  aMenu += "A" + (i+1) + " " + a.toString() + "\n";
+  }
+ return aMenu;
+}
+
+//returns a specific starters
+public Item getStarters(int index){
+ return starters.get(index);
+}
+
+ //returns the size of the categry starters
+public int getStartersSize(){
+return starters.size();
+}
+
+public String getAllStarters(){
+String aMenu = "";
+aMenu += "STARTERS:\n";
+for(int i=0;i<starters.size();i++){
+  Item a = starters.get(i);
+    //add id,name and price
+  aMenu += "A" + (i+1) + " " + a.toString() + "\n";
+  }
+ return aMenu;
+}
+
+
+//returns a specific main dishes
+public Item getMain(int index){
+ return main.get(index);
+}
+
+ //returns the size of the categry starters
+public int getMainSize(){
+return main.size();
+}
+
+//returns the main dishes as a string
+public String getAllMain(){
+String aMenu = "";
+aMenu += "MAIN DISHES:\n";
+for(int i=0;i<main.size();i++){
+  Item a = main.get(i);
+    //add id,name and price
+  aMenu += "A" + (i+1) + " " + a.toString() + "\n";
+  }
+ return aMenu;
+}
+
+
+
+
+
+//returns a specific main dishes
+public Item getDrinks(int index){
+ return drinks.get(index);
+}
+
+ //returns the size of the categry starters
+public int getDrinksSize(){
+return drinks.size();
+}
+
+//returns the Drinks as a string
+public String getAllDrinks(){
+String aMenu = "";
+aMenu += "DRINKS:\n";
+for(int i=0;i<drinks.size();i++){
+  Item a = drinks.get(i);
+    //add id,name and price
+  aMenu += "A" + (i+1) + " " + a.toString() + "\n";
+  }
+ return aMenu;
+}
+
+ //methods ( Adding name of the dish and price) 
+
+public void populateMenu(){
+  //soup
+  soup.add(new Item("Baby corn soup", "Soup", 80));
+  soup.add(new Item("Tomato soup", "Soup", 90));
+  soup.add(new Item("Chiken Manchow soup", "Soup", 120));
+  soup.add(new Item("Paya soup", "Soup", 140));
+
+  //starters
+  starters.add(new Item("Baby corn 65", "Starters", 170));
+  starters.add(new Item("Veg Manchuria", "Starters", 170));
+  starters.add(new Item("Chilli chicken", "Starters", 200));
+  starters.add(new Item("Chicken Drum sticks", "Starters", 225));
+
+  //main dishes
+  main.add(new Item("Paneer Butter Masala", "main", 230);
+  main.add(new Item("Veg Biryani", "Rice", 200);
+  main.add(new Item("Chetinad Chiken", "Curry", 240);
+  main.add(new Item("Chiken Dum Biryani", "Rice", 250);
+
+  //drinks 
+  drinks.add(new Item("Water", "Drinks", 20));
+  drinks.add(new Item("Coke", "Drinks", 50));
+  drinks.add(new Item("Fruit Juice", "Drinks", 60));
+}
+//toString
+public String toString(){
+String menu ="";
+menu += " Restaurant Menu\n"
+"----------------------------------------------------------------\n";
+menu += getAllSoup() + "\n";
+menu += getAllStarters() + "\n";
+menu += getAllMain() + "\n";
+menu += getAllDrinks() + "\n";
+return menu;
+}
+}
